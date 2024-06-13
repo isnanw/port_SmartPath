@@ -62,15 +62,6 @@ ul {
   z-index: 1;
 }
 
-.separator {
-  transform: translateX(calc(100% - 1px));
-  height: 100vh;
-}
-
-.opposite-separator {
-  height: 100vh;
-}
-
 /*** Preloader ***/
 
 #preloader {
@@ -592,7 +583,7 @@ header .mobile-menu {
   object-fit: cover;
   object-position: center;
   border-radius: 24px;
-	margin-top: 30%;
+  margin-top: 30%;
 }
 
 .about h2 {
@@ -943,6 +934,172 @@ td {
   margin-bottom: 8px;
 }
 
+/*** PORTFOLIO SECTION ***/
+
+.portfolio {
+	display: flex;
+	align-items: center;
+	position: relative;
+	z-index: 1;
+}
+
+.swiper-portfolio {
+	width: 100%;
+	height: 100vh;
+	padding-right: 250px;
+}
+
+.portfolio .single-item {
+	display: flex;
+	align-items: center;
+	height: 100vh;
+}
+
+.portfolio .single-item .swiper-pagination-clickable .swiper-pagination-bullet {
+	background-color: rgba(255, 255, 255, 1);
+	opacity: 1;
+	width: 10px;
+	height: 10px;
+	margin: 0 6px !important;
+	transition: .3s;
+}
+
+.portfolio .single-item .swiper-pagination-bullet.swiper-pagination-bullet-active {
+	width: 35px;
+	border-radius: 6px;
+}
+
+.portfolio .single-item .details {
+	margin-left: 40px;
+	white-space: nowrap;
+	cursor: grab;
+}
+
+.portfolio .single-item .details h4 {
+	font-size: 38px;
+	line-height: 38px;
+	font-weight: 700;
+	white-space: nowrap;
+	margin-bottom: 22px;
+}
+
+.portfolio .single-item .details ul li {
+	line-height: 50px;
+}
+
+.portfolio .single-item .details ul li i {
+	margin-right: 10px;
+}
+
+.portfolio .single-item .details a {
+	margin-top: 20px;
+}
+
+.portfolio .single-item .details ul li>span:first-child {
+	color: rgba(255, 255, 255, .7);
+	margin-right: 7px;
+}
+
+.portfolio .single-item .details ul li>span:nth-child(2) {
+	font-weight: 500;
+}
+
+.portfolio .single-item .main-content img {
+	width: 650px;
+	height: 450px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 20px;
+	cursor: grab;
+}
+
+.portfolio .single-item .main-content .external  {
+	display: block;
+}
+
+.portfolio .single-item .main-content .external img {
+	cursor: pointer;
+}
+
+.portfolio .single-item .main-content {
+	width: 650px;
+	height: 450px;
+}
+
+.videocontainer {
+	position: relative;
+	padding-bottom: calc(54.55% - 30px);
+	padding-top: 0;
+	height: 450px;
+	max-width: 100%;
+	overflow: hidden;
+	width: 100%;
+	display: block;
+	border-radius: 20px;
+}
+
+.videocontainer iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+.nav-item {
+	position: absolute;
+	right: 150px;
+	z-index: 11;
+	outline: none !important;
+}
+
+.next-item {
+	top: calc(50vh - 75px);
+}
+
+.prev-item {
+	top: calc(50vh + 15px);
+}
+
+.next-item.animated-btn span:before,
+.next-item.animated-btn span:after {
+	content: "\f176";
+}
+
+.next-item.animated-btn span:after {
+	bottom: -60px;
+	left: 0;
+}
+
+.next-item.animated-btn:hover span:before {
+	top: -60px;
+	left: 0;
+}
+
+.next-item.animated-btn:hover span:after {
+	bottom: 0;
+}
+
+.prev-item.animated-btn span:before,
+.prev-item.animated-btn span:after {
+	content: "\f175";
+}
+
+.prev-item.animated-btn span:after {
+	top: -60px;
+	left: 0;
+}
+
+.prev-item.animated-btn:hover span:before {
+	top: 60px;
+	left: 0;
+}
+
+.prev-item.animated-btn:hover span:after {
+	top: 0;
+}
+
 /* Skin */
 .home > div h1 > span:first-child span span,
 .home > div > div .intro,
@@ -1036,14 +1193,6 @@ header .header-inner .menu ul li span:after,
   section {
     min-height: initial;
     height: auto;
-  }
-
-  .separator-mobile-down {
-    transform: translateY(100%);
-  }
-
-  .separator-mobile-up {
-    transform: translateY(-100%);
   }
 
   .about .infos ul li > span > span {
@@ -1240,7 +1389,7 @@ header .header-inner .menu ul li span:after,
     margin: 0 auto;
     justify-content: center;
     max-width: 538px;
-		white-space: wrap;
+    white-space: wrap;
   }
 
   .about .skills .skills-content {
@@ -1418,9 +1567,6 @@ header .header-inner .menu ul li span:after,
     display: none;
   }
 
-  .videocontainer {
-    height: 372px;
-  }
 
   .portfolio .single-item .details {
     margin: 30px 0 0;
@@ -1598,10 +1744,6 @@ header .header-inner .menu ul li span:after,
 @media screen and (max-width: 767px) {
   body {
     font-size: 16px;
-  }
-
-  .separator {
-    display: none;
   }
 
   .custom-title h3 {
