@@ -1,5 +1,6 @@
 # port_SmartPath
 
+## Referensi Styling
 <!-- Fontawesome -->
 [Font Awesome](https://cdnjs.com/libraries/font-awesome)
 <a href="https://github.com/FortAwesome/Font-Awesome?utm_source=cdnjs&utm_medium=cdnjs_link&utm_campaign=cdnjs_library" target="_blank">Font Awesome GitHub</a>
@@ -21,3 +22,14 @@
 
 <!-- jquery -->
 [jQuery](https://cdnjs.com/libraries/jquery)
+
+## Screenshot
+Berikut adalah gambar hasil:
+![Home](assets/hasil/home.png)
+![About](assets/hasil/about.png)
+![About-Skills](assets/hasil/about-skills.png)
+![About-Resume](assets/hasil/about-resume.png)
+![Portfolio](assets/hasil/portfolio.png)
+![Contact](assets/hasil/contact.png)
+![Blog](assets/hasil/blog.png)
+
